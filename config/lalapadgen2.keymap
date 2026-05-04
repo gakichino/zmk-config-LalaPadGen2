@@ -99,7 +99,7 @@
 &mt LCTRL A               &kp S         &kp D              &kp F            &kp G                                                     &kp H                 &kp J            &kp K            &kp L          &mt2 RCTRL SEMI
 &kp Z                     &kp X         &kp C              &kp V            &kp B                                                     &kp N                 &kp M            &kp COMMA        &kp PERIOD     &kp SLASH
 &mt2 LEFT_ALT LANGUAGE_1  &mt LWIN TAB  &kp ESC            &kp LEFT_SHIFT   &lt 4 SPACE       &lt 3 ESCAPE  &mt2 RIGHT_GUI BACKSPACE  &mt2 RIGHT_GUI ENTER  &kp RIGHT_SHIFT  &kp SQT          &kp BACKSLASH  &mt2 RIGHT_ALT LANG2
-                          &kp LG(D)     &kp LC(LG(RIGHT))  &kp LC(LA(TAB))  &kp LC(LG(LEFT))  &kp LG(TAB)   &kp A                     &kp C_VOL_DN          &kp RC(MINUS)    &kp C_VOLUME_UP  &none
+                          &kp LG(D)     &kp LC(LG(RIGHT))  &kp LC(LA(TAB))  &kp LC(LG(LEFT))  &kp LG(TAB)   &kp A                     &kp C_VOL_DN          &kp LC(MINUS)    &kp C_VOLUME_UP  &none
 &mkp LCLK                 &mkp RCLK     &mkp MCLK                                                                                                                            &mkp LCLK        &mkp RCLK      &mkp MCLK
 &mkp MB4                  &mkp MB5      &kp LC(LA(TAB))    &kp LG(TAB)      &kp LCTRL                                                 &mkp MB4              &mkp MB5         &kp LC(LA(TAB))  &kp LG(TAB)    &kp RCTRL
             >;
