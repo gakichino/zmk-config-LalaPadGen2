@@ -152,5 +152,10 @@
             if-layers = <4 1>;
             then-layer = <5>;
         };
+
+        Cond_Syslayer2 {
+            if-layers = <3 4>;
+            then-layer = <5>;
+        };
     };
 };
