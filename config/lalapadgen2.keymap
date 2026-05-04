@@ -69,7 +69,7 @@
 &mt LCTRL A          &kp S         &kp D        &kp F           &kp G                                                &kp H                 &kp J            &kp K        &kp L          &mt2 RCTRL MINUS
 &kp Z                &kp X         &kp C        &kp V           &kp B                                                &kp N                 &kp M            &kp COMMA    &kp PERIOD     &kp SLASH
 &mt2 LANG1 LEFT_ALT  &mt LWIN TAB  &kp ESC      &kp LEFT_SHIFT  &lt 1 SPACE  &lt 2 ESCAPE  &mt2 RIGHT_GUI BACKSPACE  &mt2 RIGHT_GUI ENTER  &kp RIGHT_SHIFT  &kp SQT      &kp BACKSLASH  &mt2 RIGHT_ALT LANG2
-                     &none         &kp RIGHT    &kp DOWN        &kp LEFT     &kp UP        &kp UP                    &kp LEFT              &kp DOWN         &kp RIGHT    &none
+                     &none         &kp RIGHT    &kp DOWN        &kp LEFT     &kp LC(UP)    &kp UP                    &kp LEFT              &kp DOWN         &kp RIGHT    &none
 &mkp LCLK            &mkp RCLK     &mkp MCLK                                                                                                                &mkp LCLK    &mkp RCLK      &mkp MCLK
 &mkp MB4             &mkp MB5      &kp LG(TAB)  &kp LG(D)       &kp LCTRL                                            &mkp MB4              &mkp MB5         &kp LG(TAB)  &kp LG(D)      &kp LCTRL
             >;
