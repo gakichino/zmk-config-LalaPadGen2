@@ -49,6 +49,26 @@
         };
     };
 
+    macros {
+        /* Default レイヤーへ戻しつつ、スクロールをMac 相当に戻す */
+        to0_dyn_scale_set: to0_dyn_scale_set {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&to 0>, <&zip_dyn_scale_set ZDS_SC 1>;
+        };
+
+        /* win_default レイヤーへ戻しつつ、スクロールを Win 相当に戻す */
+        to2_dyn_scale_set: to2_dyn_scale_set {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&to 2>, <&zip_dyn_scale_set ZDS_SC ZDS_RST>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -135,7 +155,7 @@
             display-name = "system_layer";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
-&to 0         &to 2         &kp F8        &kp F9        &kp F10                       &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
+&to0_dyn_scale_set         &to2_dyn_scale_set         &kp F8        &kp F9        &kp F10                       &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
 &kp F11       &kp F12       &kp F13       &kp F14       &kp F15                       &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
               &trans        &trans        &trans        &trans        &trans  &trans  &trans                         &trans                         &trans                         &trans
