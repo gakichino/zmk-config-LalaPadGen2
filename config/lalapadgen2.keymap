@@ -96,7 +96,7 @@
             bindings = <
 &trans   &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans   &trans
 &trans   &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans   &trans
-&trans   &trans  &trans  &trans  &trans                  &trans  &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&trans   &trans  &trans  &trans  &trans                  &trans  &trans  &kp COMMA  &kp DOT  &kp FSLH
 &kp TAB  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans
          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
 &trans   &trans  &trans                                                  &trans     &trans   &trans
