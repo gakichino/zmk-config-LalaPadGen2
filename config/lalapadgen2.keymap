@@ -82,13 +82,13 @@
         SYSTEM_LAYER {
             display-name = "system_layer";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
-&to 0         &to 0         &to 2         &kp F9        &kp F10                       &none                          &none                          &none                          &none                          &trans
-&kp F11       &kp F12       &kp F13       &kp F14       &kp F15                       &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
-              &trans        &trans        &trans        &trans        &trans  &trans  &trans                         &trans                         &trans                         &trans
-&trans        &trans        &trans                                                                                                                  &trans                         &trans                         &trans
-&trans        &trans        &trans        &trans        &trans                        &trans                         &trans                         &trans                         &trans                         &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+&to 0         &to 0         &to 2         &to 3         &to 4                         &to 5         &to 6         &to 7         &to 8         &to 9
+&to 10        &to 11        &to 12        &to 13        &to 14                        &to 15        &to 16        &to 17        &to 18        &to 19
+&to 20        &to 21        &to 22        &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans        &trans
+              &trans        &trans        &trans        &trans        &trans  &trans  &trans        &trans        &trans        &trans
+&trans        &trans        &trans                                                                                &trans        &trans        &trans
+&trans        &trans        &trans        &trans        &trans                        &trans        &trans        &trans        &trans        &trans
             >;
         };
 
