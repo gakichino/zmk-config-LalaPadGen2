@@ -45,7 +45,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_mo12";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 1>;
+            bindings = <&mo 3>, <&mo 1>;
         };
     };
 
@@ -72,7 +72,7 @@
 &mt LEFT_GUI Q            &kp W         &kp E          &kp R             &kp T                                                 &kp Y                 &kp U            &kp I            &kp O             &kp P
 &mt LCTRL A               &kp S         &kp D          &kp F             &kp G                                                 &kp H                 &kp J            &kp K            &kp L             &mt2 RCTRL MINUS
 &kp Z                     &kp X         &kp C          &kp V             &kp B                                                 &kp N                 &kp M            &kp COMMA        &kp PERIOD        &kp SLASH
-&mt2 LEFT_ALT LANGUAGE_1  &mt LWIN TAB  &kp ESC        &kp LEFT_SHIFT    &lt 2 SPACE   &lt 1 ESCAPE  &mt2 RIGHT_GUI BACKSPACE  &mt2 RIGHT_GUI ENTER  &kp RIGHT_SHIFT  &kp SQT          &kp BACKSLASH     &mt2 RIGHT_ALT LANG2
+&mt2 LEFT_ALT LANGUAGE_1  &mt LWIN TAB  &kp ESC        &kp LEFT_SHIFT    &lt 3 SPACE   &lt 1 ESCAPE  &mt2 RIGHT_GUI BACKSPACE  &mt2 RIGHT_GUI ENTER  &kp RIGHT_SHIFT  &kp SQT          &kp BACKSLASH     &mt2 RIGHT_ALT LANG2
                           &kp F11       &kp LC(RIGHT)  &kp LC(DOWN)      &kp LC(LEFT)  &kp LC(UP)    &kp LG(EQUAL)             &kp C_VOL_DN          &kp LG(MINUS)    &kp C_VOLUME_UP  &none
 &mkp LCLK                 &mkp RCLK     &mkp MCLK                                                                                                                     &mkp LCLK        &mkp RCLK         &mkp MCLK
 &mkp MB4                  &mkp MB5      &kp LC(DOWN)   &kp LC(UP_ARROW)  &kp LEFT_GUI                                          &mkp MB4              &mkp MB5         &kp LC(DOWN)     &kp LC(UP_ARROW)  &kp RIGHT_GUI
@@ -89,6 +89,18 @@
              &trans   &trans  &trans                &trans                &trans  &trans  &trans            &trans       &trans        &trans
 &trans       &trans   &trans                                                                                             &trans        &trans     &trans
 &trans       &trans   &trans  &trans                &trans                                &trans            &trans       &trans        &trans     &trans
+            >;
+        };
+
+        win_def {
+            bindings = <
+&trans   &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans   &trans
+&trans   &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans   &trans
+&trans   &trans  &trans  &trans  &trans                  &trans  &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&kp TAB  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans
+         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans   &trans  &trans                                                  &trans     &trans   &trans
+&trans   &trans  &trans  &trans  &trans                  &trans  &trans  &trans     &trans   &trans
             >;
         };
 
@@ -109,7 +121,7 @@
             display-name = "system_layer";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &out OUT_TOG                   &bt BT_SEL 0                   &bt BT_SEL 1                   &bt BT_SEL 2                   &bt BT_SEL 3
-&to 0         &to 0         &kp F8        &kp F9        &kp F10                       &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
+&to 0         &to 2         &kp F8        &kp F9        &kp F10                       &sys_reset                     &bootloader                    &bt BT_CLR                     &bt BT_CLR_ALL                 &trans
 &kp F11       &kp F12       &kp F13       &kp F14       &kp F15                       &zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans                         &trans                         &trans                         &trans                         &trans
               &trans        &trans        &trans        &trans        &trans  &trans  &trans                         &trans                         &trans                         &trans
@@ -123,13 +135,13 @@
         compatible = "zmk,conditional-layers";
 
         Cond_Syslayer {
-            if-layers = <2 1>;
-            then-layer = <3>;
+            if-layers = <3 1>;
+            then-layer = <4>;
         };
 
         Cond_Syslayer2 {
-            if-layers = <2 2>;
-            then-layer = <3>;
+            if-layers = <3 3>;
+            then-layer = <4>;
         };
     };
 };
