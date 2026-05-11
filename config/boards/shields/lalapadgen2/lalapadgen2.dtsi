@@ -163,6 +163,14 @@
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>;
+        macscrollmode {
+            layers = <0>;
+            input-processors = <&trackpad_key_behaviors_R>,
+                               <&zip_xy_scaler 1 5>,
+                               <&zip_scroll_scaler 1 24>,
+                               <&zip_dynamic_xy_scaler>,
+                               <&zip_dynamic_scroll_scaler>;
+        };
         lowspeedmode {
             layers = <1>,<3>;
             input-processors =  <&trackpad_key_behaviors_R>,
@@ -181,6 +189,14 @@
                            <&zip_scroll_scaler 1 12>,
                            <&zip_dynamic_xy_scaler>,
                            <&zip_dynamic_scroll_scaler>;
+        macscrollmode {
+            layers = <0>;
+            input-processors = <&trackpad_key_behaviors_L>,
+                               <&zip_xy_scaler 1 5>,
+                               <&zip_scroll_scaler 1 24>,
+                               <&zip_dynamic_xy_scaler>,
+                               <&zip_dynamic_scroll_scaler>;
+        };
         lowspeedmode {
             layers = <1>,<3>;
             input-processors =  <&trackpad_key_behaviors_L>,
