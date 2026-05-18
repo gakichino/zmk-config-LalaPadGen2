@@ -75,7 +75,7 @@
 &mt2 LEFT_ALT LANGUAGE_1  &mt LWIN ESCAPE  &kp TAB        &kp LEFT_SHIFT    &lt 4 SPACE   &lt 1 ESCAPE  &mt2 RIGHT_GUI BACKSPACE  &mt2 RIGHT_GUI ENTER  &kp RIGHT_SHIFT  &kp SQT          &kp BACKSLASH     &mt2 RIGHT_ALT LANG2
                           &kp F11          &kp LC(RIGHT)  &kp LC(DOWN)      &kp LC(LEFT)  &kp LC(UP)    &kp LG(EQUAL)             &kp C_VOL_DN          &kp LG(MINUS)    &kp C_VOLUME_UP  &none
 &mkp LCLK                 &mkp RCLK        &mkp MCLK                                                                                                                     &mkp LCLK        &mkp RCLK         &mkp MCLK
-&mkp MB4                  &mkp MB5         &kp LC(DOWN)   &kp LC(UP_ARROW)  &kp LEFT_GUI                                          &mkp MB4              &mkp MB5         &kp LC(DOWN)     &kp LC(UP_ARROW)  &kp RIGHT_GUI
+&mkp MB4                  &mkp MB5         &kp LC(DOWN)   &kp LC(UP_ARROW)  &none                                                 &mkp MB4              &mkp MB5         &kp LC(DOWN)     &kp LC(UP_ARROW)  &none
             >;
         };
 
@@ -101,7 +101,7 @@
 &mt2 LEFT_ALT LANGUAGE_1  &mt LWIN ESCAPE  &kp TAB            &kp LEFT_SHIFT   &lt 4 SPACE       &lt 3 ESCAPE  &mt2 RCTRL BACKSPACE  &mt2 RIGHT_GUI ENTER  &kp RIGHT_SHIFT  &kp SQT          &kp BACKSLASH  &mt2 RIGHT_ALT LANG2
                           &kp LG(D)        &kp LC(LG(RIGHT))  &kp LC(LA(TAB))  &kp LC(LG(LEFT))  &kp LG(TAB)   &kp LC(EQUAL)         &kp C_VOL_DN          &kp LC(MINUS)    &kp C_VOLUME_UP  &none
 &mkp LCLK                 &mkp RCLK        &mkp MCLK                                                                                                                        &mkp LCLK        &mkp RCLK      &mkp MCLK
-&mkp MB4                  &mkp MB5         &kp LC(LA(TAB))    &kp LG(TAB)      &kp LCTRL                                             &mkp MB4              &mkp MB5         &kp LC(LA(TAB))  &kp LG(TAB)    &kp RCTRL
+&mkp MB4                  &mkp MB5         &kp LC(LA(TAB))    &kp LG(TAB)      &none                                                 &mkp MB4              &mkp MB5         &kp LC(LA(TAB))  &kp LG(TAB)    &none
             >;
         };
 
