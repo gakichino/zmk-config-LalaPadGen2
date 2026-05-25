@@ -52,14 +52,19 @@
     combos {
         compatible = "zmk,combos";
 
-        CONBO_ESC {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+        CONBO_SQT {
+            bindings = <&kp SQT>;
+            key-positions = <18 19>;
         };
 
-        COMBO_TAB {
-            bindings = <&kp TAB>;
-            key-positions = <10 11>;
+        COMBO_BACKSLASH {
+            bindings = <&kp NON_US_BACKSLASH>;
+            key-positions = <8 9>;
+        };
+
+        COMBO_GRAVE {
+            bindings = <&kp GRAVE>;
+            key-positions = <8 9 35>;
         };
     };
 
