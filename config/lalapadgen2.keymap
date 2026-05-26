@@ -58,20 +58,14 @@
         };
 
         COMBO_BACKSLASH {
-            bindings = <&kp NON_US_BACKSLASH>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <8 9>;
         };
 
         COMBO_GRAVE {
             bindings = <&kp GRAVE>;
             key-positions = <5 6>;
-            layers = <1>;
-        };
-
-        COMBO_GRAVE2 {
-            bindings = <&kp GRAVE>;
-            key-positions = <5 6>;
-            layers = <3>;
+            layers = <0 2>;
         };
     };
 
