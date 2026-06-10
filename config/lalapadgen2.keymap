@@ -80,7 +80,7 @@
 
         tab_combo {
             bindings = <&kp TAB>;
-            key-positions = <0 1>;
+            key-positions = <4 3>;
         };
     };
 
