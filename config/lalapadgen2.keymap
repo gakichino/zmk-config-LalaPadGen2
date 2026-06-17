@@ -62,7 +62,7 @@
     combos {
         compatible = "zmk,combos";
 
-        CONBO_SQT {
+        COMBO_SQT {
             bindings = <&kp SQT>;
             key-positions = <18 19>;
         };
@@ -81,6 +81,18 @@
         tab_combo {
             bindings = <&kp TAB>;
             key-positions = <4 3>;
+        };
+
+        to_win_system {
+            bindings = <&mo 6>;
+            key-positions = <34 35>;
+            layers = <1>;
+        };
+
+        to_mac_system {
+            bindings = <&mo 5>;
+            key-positions = <34 35>;
+            layers = <0>;
         };
     };
 
@@ -180,17 +192,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        Cond_Syslayer {
-            if-layers = <0>;
-            then-layer = <5>;
-        };
-
-        Cond_Syslayer2 {
-            if-layers = <1>;
-            then-layer = <6>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
