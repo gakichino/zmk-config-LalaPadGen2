@@ -103,13 +103,13 @@
         win_default {
             display-name = "Default";
             bindings = <
-&trans            &trans             &trans           &trans       &trans                                        &trans  &trans         &trans           &trans           &trans
-&trans            &trans             &trans           &trans       &trans                                        &trans  &trans         &trans           &trans           &trans
-&trans            &trans             &trans           &trans       &trans                                        &trans  &trans         &trans           &trans           &trans
-&trans            &kp LG(TAB)        &kp LG(TAB)      &trans       &trans  &mt3 LEFT_CONTROL TAB  &trans         &trans  &trans         &kp LC(LA(TAB))  &kp LC(LA(TAB))  &trans
-                  &kp LG(D)          &trans           &trans       &trans  &trans                 &kp LC(EQUAL)  &trans  &kp LC(MINUS)  &trans           &trans
-&trans            &trans             &trans                                                                                             &trans           &trans           &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(LA(TAB))  &kp LG(TAB)  &trans                                        &trans  &trans         &kp LC(LA(TAB))  &kp LG(TAB)      &trans
+&trans            &trans             &trans           &trans       &trans                                                       &trans  &trans         &trans           &trans           &trans
+&trans            &trans             &trans           &trans       &trans                                                       &trans  &trans         &trans           &trans           &trans
+&trans            &trans             &trans           &trans       &trans                                                       &trans  &trans         &trans           &trans           &trans
+&trans            &kp LG(TAB)        &kp LG(TAB)      &trans       &trans  &mt3 LEFT_CONTROL TAB  &mt2 RIGHT_CONTROL BACKSPACE  &trans  &trans         &kp LC(LA(TAB))  &kp LC(LA(TAB))  &trans
+                  &kp LG(D)          &trans           &trans       &trans  &trans                 &kp LC(EQUAL)                 &trans  &kp LC(MINUS)  &trans           &trans
+&trans            &trans             &trans                                                                                                            &trans           &trans           &trans
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &kp LC(LA(TAB))  &kp LG(TAB)  &trans                                                       &trans  &trans         &kp LC(LA(TAB))  &kp LG(TAB)      &trans
             >;
         };
 
@@ -128,13 +128,13 @@
 
         symbols {
             bindings = <
-&kp QUESTION  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp BSPC  &kp TILDE                                  &none     &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
-&kp AT        &kp SQT            &kp DOLLAR       &kp DEL   &kp FSLH                                   &kp HASH  &none      &kp LBKT              &kp RBKT               &kp RIGHT_CONTROL
-&kp LSHFT     &kp GRAVE          &kp CARET        &kp PIPE  &kp BSLH                                   &kp AMPS  &kp AMPS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RSHFT
-&trans        &trans             &trans           &none     &trans     &trans  &mt3 RIGHT_SHIFT ENTER  &mo 4     &trans     &trans                &trans                 &trans
-              &trans             &trans           &trans    &trans     &trans  &trans                  &trans    &trans     &trans                &trans
-&trans        &trans             &trans                                                                                     &trans                &trans                 &trans
-&trans        &trans             &trans           &trans    &trans                                     &trans    &trans     &trans                &trans                 &trans
+&kp QUESTION  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp BSPC  &kp TILDE                                  &none      &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
+&kp AT        &kp SQT            &kp DOLLAR       &kp DEL   &kp FSLH                                   &kp HASH   &none      &kp LBKT              &kp RBKT               &kp RIGHT_CONTROL
+&kp LSHFT     &kp GRAVE          &kp CARET        &kp PIPE  &kp BSLH                                   &kp ASTRK  &kp AMPS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RSHFT
+&trans        &trans             &trans           &none     &trans     &trans  &mt3 RIGHT_SHIFT ENTER  &mo 4      &trans     &trans                &trans                 &trans
+              &trans             &trans           &trans    &trans     &trans  &trans                  &trans     &trans     &trans                &trans
+&trans        &trans             &trans                                                                                      &trans                &trans                 &trans
+&trans        &trans             &trans           &trans    &trans                                     &trans     &trans     &trans                &trans                 &trans
             >;
 
             label = "symbols";
