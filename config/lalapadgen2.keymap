@@ -141,7 +141,7 @@
             bindings = <
 &kp SLASH                 &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                                   &none     &kp BSPC       &kp DELETE    &kp TAB    &kp MINUS
 &kp ASTERISK              &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS                                    &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &kp ENTER
-&mt2 LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL                                   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &kp RIGHT_SHIFT
+&mt2 LEFT_SHIFT NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL                                   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END    &trans
 &trans                    &trans        &trans        &kp SPACE     &lt 4 DOT  &mt3 LEFT_GUI BACKSPACE  &trans  &trans    &trans         &trans        &trans     &trans
                           &trans        &trans        &trans        &trans     &trans                   &trans  &trans    &trans         &trans        &trans
 &trans                    &trans        &trans                                                                                           &trans        &trans     &trans
@@ -151,13 +151,13 @@
 
         symbols {
             bindings = <
-&kp QUESTION  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp BSPC  &kp TILDE                                  &none      &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
-&kp AT        &kp SQT            &kp DOLLAR       &kp DEL   &kp FSLH                                   &kp HASH   &none      &kp LBKT              &kp RBKT               &kp RIGHT_CONTROL
-&kp LSHFT     &kp GRAVE          &kp CARET        &kp PIPE  &kp BSLH                                   &kp ASTRK  &kp AMPS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RSHFT
-&trans        &trans             &trans           &none     &trans     &trans  &mt3 RIGHT_SHIFT ENTER  &mo 4      &trans     &trans                &trans                 &trans
-              &trans             &trans           &trans    &trans     &trans  &trans                  &trans     &trans     &trans                &trans
-&trans        &trans             &trans                                                                                      &trans                &trans                 &trans
-&trans        &trans             &trans           &trans    &trans                                     &trans     &trans     &trans                &trans                 &trans
+&kp QUESTION  &kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp BSPC  &kp TILDE                  &none      &kp UNDER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT
+&kp AT        &kp SQT            &kp DOLLAR       &kp DEL   &kp FSLH                   &kp HASH   &none      &kp LBKT              &kp RBKT               &kp RIGHT_CONTROL
+&kp LSHFT     &kp GRAVE          &kp CARET        &kp PIPE  &kp BSLH                   &kp ASTRK  &kp AMPS   &kp LEFT_BRACE        &kp RIGHT_BRACE        &mo 4
+&trans        &trans             &trans           &none     &trans     &trans  &trans  &trans     &trans     &trans                &trans                 &trans
+              &trans             &trans           &trans    &trans     &trans  &trans  &trans     &trans     &trans                &trans
+&trans        &trans             &trans                                                                      &trans                &trans                 &trans
+&trans        &trans             &trans           &trans    &trans                     &trans     &trans     &trans                &trans                 &trans
             >;
 
             label = "symbols";
