@@ -57,41 +57,21 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
-
-        hrm: hrm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <225>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        COMBO_SQT {
-            bindings = <&kp SQT>;
-            key-positions = <18 19>;
-        };
-
-        COMBO_BACKSLASH {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <8 9>;
-        };
-
-        COMBO_GRAVE {
-            bindings = <&kp GRAVE>;
+        mac_onsei {
+            bindings = <&kp LEFT_CONTROL>;
             key-positions = <5 6>;
             layers = <0>;
         };
 
-        tab_combo {
-            bindings = <&kp TAB>;
-            key-positions = <4 3>;
+        win_onsei {
+            bindings = <&kp LG(H)>;
+            key-positions = <5 6>;
+            layers = <1>;
         };
 
         to_win_system {
@@ -113,13 +93,13 @@
         mac_default {
             display-name = "mDefault";
             bindings = <
-&kp Q                     &kp W             &kp E             &kp R             &kp T                                                        &kp Y                  &kp U            &kp I            &kp O                  &kp P
-&mt LCTRL A               &kp S             &kp D             &kp F             &kp G                                                        &kp H                  &kp J            &kp K            &kp L                  &mt2 RCTRL SEMI
-&mt2 LEFT_SHIFT Z         &kp X             &kp C             &kp V             &kp B                                                        &kp N                  &kp M            &kp COMMA        &mt2 RIGHT_ALT PERIOD  &lt 2 SLASH
-&mt2 LEFT_ALT LANGUAGE_1  &kp LC(UP_ARROW)  &kp LC(UP_ARROW)  &kp ESCAPE        &lt 3 SPACE     &mt2 LEFT_GUI TAB  &mt3 RIGHT_GUI BACKSPACE  &mt2 LEFT_SHIFT ENTER  &kp RIGHT_SHIFT  &kp LC(DOWN)     &kp LC(DOWN)           &mt2 RIGHT_ALT LANG2
+&kp Q                     &kp W             &kp E             &kp R             &kp T                                                        &kp Y                  &kp U            &kp I            &kp O             &kp P
+&mt LCTRL A               &kp S             &kp D             &kp F             &kp G                                                        &kp H                  &kp J            &kp K            &kp L             &mt2 RCTRL SEMI
+&mt2 LEFT_SHIFT Z         &kp X             &kp C             &kp V             &kp B                                                        &kp N                  &kp M            &kp COMMA        &kp DOT           &lt 2 SLASH
+&mt2 LEFT_ALT LANGUAGE_1  &kp LC(UP_ARROW)  &kp LC(UP_ARROW)  &kp ESCAPE        &lt 3 SPACE     &mt2 LEFT_GUI TAB  &mt3 RIGHT_GUI BACKSPACE  &mt2 LEFT_SHIFT ENTER  &kp RIGHT_SHIFT  &kp LC(DOWN)     &kp LC(DOWN)      &mt2 RIGHT_ALT LANG2
                           &kp F11           &msc SCRL_RIGHT   &msc SCRL_DOWN    &msc SCRL_LEFT  &msc SCRL_UP       &kp LG(EQUAL)             &kp C_VOL_DN           &kp LG(MINUS)    &kp C_VOLUME_UP  &kp C_MUTE
-&mkp LCLK                 &mkp RCLK         &mkp MCLK                                                                                                                                &mkp LCLK        &mkp RCLK              &mkp MCLK
-&kp LC(LEFT)              &kp LC(RIGHT)     &kp LC(DOWN)      &kp LC(UP_ARROW)  &none                                                        &mkp MB4               &mkp MB5         &kp LC(DOWN)     &kp LC(UP_ARROW)       &none
+&mkp LCLK                 &mkp RCLK         &mkp MCLK                                                                                                                                &mkp LCLK        &mkp RCLK         &mkp MCLK
+&kp LC(LEFT)              &kp LC(RIGHT)     &kp LC(DOWN)      &kp LC(UP_ARROW)  &none                                                        &mkp MB4               &mkp MB5         &kp LC(DOWN)     &kp LC(UP_ARROW)  &none
             >;
         };
 
